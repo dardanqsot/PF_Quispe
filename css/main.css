@@ -83,6 +83,10 @@ html{
     margin: auto;
     border-radius: 100%;
 }
+.inicio .contenido-banner img:hover{
+    filter: drop-shadow(10px 10px 10px rgb(6, 128, 6));
+}
+
 .inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
@@ -134,11 +138,14 @@ html{
     font-weight: bold;
 }
 .sobremi .fila{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items:flex-start;
+
 }
 .sobremi .fila .col
 {
-    width: 50%;
+    width: 90%;
 }
 .sobremi .fila .col h3{
     font-size: 28px;
@@ -163,8 +170,9 @@ html{
     border-radius: 5px;
 }
 .sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
@@ -334,9 +342,9 @@ html{
     padding: 20px 0;
 }
 .portfolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
 }
 .portfolio .galeria .proyecto{
     position: relative;
@@ -442,7 +450,6 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
