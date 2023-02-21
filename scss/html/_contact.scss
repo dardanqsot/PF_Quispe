@@ -1,0 +1,91 @@
+@import "../base/extend";
+@import "../base/mixin";
+// SECCION CONTACTO
+.contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+    
+    .contenido-seccion{
+        max-width: 1100px;
+        margin: auto;
+    }
+    
+    h2{
+        font-size: 48px;
+        @extend %font-center;
+        padding: 20px 0;
+    }
+    
+    .fila{
+        display: flex;
+    }
+    
+    .col{
+        width: 50%;
+        padding: 10px;
+        position: relative;
+        
+        input, textarea{
+            @include color-display(#fff, block);
+            width: 100%;
+            padding: 18px;
+            border: none;
+            margin-bottom: 20px;
+            background-color: #252A2E;
+            font-size: 18px;
+        }
+        
+        button{
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid #fff;
+            width: fit-content;
+            @include color-display(#fff, block);
+            margin: 20px auto;
+            padding: 10px 22px;
+            font-size: 16px;
+            position: relative;
+            
+            .overlay{
+                position: absolute;
+                @extend %top-left;
+                width: 0;
+                height: 100%;
+                background-color: #1CB698;
+                transition: 1s;
+            }
+            
+            &:hover{
+                .overlay{
+                    width: 100%;
+                }
+            }
+        }
+        
+        img{
+            width: 100%;
+        }
+        
+        .info{
+            position: absolute;
+            @include top-left( 40%, 50%);
+            background-color: #252A2E;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            
+            ul{
+                list-style: none;
+                
+                li{
+                    margin-bottom: 20px;
+                    
+                    i{
+                        @include color-display(#1CB698, inline-block);
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

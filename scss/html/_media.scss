@@ -1,0 +1,44 @@
+@media screen and (max-width: 700px) {
+    .sobremi {
+    .fila {
+    display: block;
+    }
+    .fila .col {
+    width: fit-content;
+    }
+    }
+    
+    .curriculum {
+    .fila {
+    display: block;
+    }
+    .fila .col {
+    width: 90%;
+    }
+    .fila .derecha {
+    margin-left: 20px;
+    }
+    }
+    
+    .portfolio {
+    .galeria {
+    display: block;
+    width: 100%;
+    }
+    .galeria .proyecto {
+    max-width: 100%;
+    }
+    .galeria .proyecto img {
+    width: 100%;
+    }
+    }
+    
+    .contacto {
+    .fila {
+    display: block;
+    }
+    .fila .col {
+    width: 100%;
+    }
+    }
+    }

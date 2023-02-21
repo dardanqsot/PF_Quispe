@@ -1,0 +1,10 @@
+@mixin color-display($color, $display){
+    color: $color;
+    display: $display;
+}
+
+
+@mixin top-left ($top, $left)  {
+    top: $top;
+    left: $left;
+}
